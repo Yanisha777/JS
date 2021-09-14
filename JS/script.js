@@ -1,13 +1,19 @@
-"use strict";
+const numberOfFilms = prompt("Which number of films did you see?", "");
 
-a = 15;
-console.log(a);
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false,
+};
 
-let number = 5;
-const leftBorderWidth = 1;
+const a = prompt("One of the last watched movies?", "");
+b = prompt("how much would you rate it?", "");
+c = prompt("One of the last watched movies?", "");
+d = prompt("how much would you rate it?", "");
 
-number = 10;
-console.log(number);
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const firstname = "Dorin";
-console.log(firstname);
+console.log(personalMovieDB);
